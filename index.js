@@ -1,6 +1,5 @@
 // Code your solution in this file
 
 function findMatching(drivers, string){
-  let driver = drivers.filter(function(findName) { return findName === name;} );
-
+  let matchingDrivers = drivers.filter(function(driver){return driver === string })
 }
