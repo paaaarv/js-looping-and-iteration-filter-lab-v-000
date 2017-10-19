@@ -13,10 +13,12 @@ function fuzzyMatch(drivers, string){
     if (driver.substring(0, string.length) === string){
       return driver
     };
-
-
-
   })
+}
 
-
+function matchName(drivers, string){ 
+  return drivers.filter(function(driver){
+    return driver["name"] === string;
+    ]
+  })
 }
