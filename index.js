@@ -5,3 +5,16 @@ function findMatching(drivers, string){
     return driver.toLowerCase() === string.toLowerCase();
   })
 }
+
+
+function fuzzyMatch(drivers, string){
+  let length = string.length 
+  return drivers.filter(function(driver){
+    return driver[0, length] === string; 
+    
+
+    
+  })
+
+  
+}
