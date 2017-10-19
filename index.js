@@ -10,7 +10,9 @@ function findMatching(drivers, string){
 function fuzzyMatch(drivers, string){
   let length = string.length
   return drivers.filter(function(driver){
-    return driver[0, length] === string;
+    if (driver[0, length] === string){
+      return driver
+    };
     
 
 
