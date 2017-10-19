@@ -2,6 +2,6 @@
 
 function findMatching(drivers, string){
   const matchingDrivers = drivers.filter(function(driver){
-    return driver === string;
+    return driver.toLowerCase() === string.toLowerCase();
   })
 }
